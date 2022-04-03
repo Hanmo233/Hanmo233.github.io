@@ -5,26 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="a.css">
+    <title>欢迎来到寒莫的主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div.container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        video {
+            position: absolute;
+            /* 视频不按百分比宽度变化，视频长度宽度跟随父元素变化 */
+            object-fit: fill;
+            width: inherit;
+            height: inherit;
+            z-index: -10;
+            /* margin: 0 auto; */
+            /* 背景模糊设置 */
+            /* filter: blur(15px);  */
+            /* -webkit-filter: grayscale(100%); */
+            /* 背景灰度设置 */
+            /* filter:grayscale(100%);  */
+            /* height: 100%; */
+        }
+        /* source {
+            min-width: 100%;
+            min-height: 100%;
+            height: auto;
+            width: auto;
+        } */
+    </style>
 </head>
 
 <body>
-    <ul class="tree">
-        <div class="star"></div>
-        <div class="chunk"></div>
-    </ul>
-</body>
-<script>
-    let tree = document.querySelector(".tree");
-    for (let i = 0; i < 129; i++) {
-        let li = document.createElement("li");
 
-        // li.style = '--i:' + i;
-        // li.style += '--h:' + Math.floor(i / 4) * 4;
-        li.style = `--i:${i}`;
-        tree.appendChild(li);
-    }
-</script>
+    <div class="container">
+        <!-- src: 设置显示视频路径  controls: 显示控制栏    loop: 控制视频循环播放  autoplay: 自动播放  muted:设置静音播放 -->
+        <video loop autoplay muted>
+            <!-- <source src="video/长门神子的休憩2k.mp4" type="video/mp4"> -->
+            <source src="video/魔法女孩2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+</body>
 
 </html>
