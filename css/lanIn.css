@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+.landIn {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.8;
+    color: white;
+    font-family: Lora, serif;
+    white-space: pre;
+}
+
+p {
+    margin: 0 9em;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+span {
+    animation: landIn 0.8s ease-out both;
+}
+
+@keyframes landIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

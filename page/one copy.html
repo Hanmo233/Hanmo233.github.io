@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        } */
+
+        div.box {
+            width: 820px;
+            height: 420px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        div.main {
+            width: 800px;
+            height: 400px;
+            background-color: rgb(130, 165, 217);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        div.left {
+            border-radius: 10px;
+            width: 40%;
+            height: 100%;
+            color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            margin: 100px 0 30px 50px;
+        }
+
+        p {
+            margin-left: 50px;
+        }
+
+        .name {
+            float: right;
+        }
+
+        div.right {
+            border-radius: 10px;
+            width: 60%;
+            height: 100%;
+            transform: rotate(-57deg);
+        }
+
+        .item {
+            width: 100%;
+            height: 61px;
+            margin: 20px;
+            border-radius: 50px;
+            background-color: #fff;
+            transition: all 1.5s;
+
+        }
+
+        .item:nth-child(1) {
+            background-color: rgb(206, 224, 163);
+            margin-left: 183px;
+            transition: all 1s;
+
+        }
+
+        .item:nth-child(2) {
+            background-color: rgb(163, 224, 212);
+            margin-left: 100px;
+            transition: all 1s 0.1S;
+
+        }
+
+        .item:nth-child(3) {
+            background-color: rgb(149, 226, 131);
+            margin-left: 150px;
+            transition: all 1s 0.05S;
+
+        }
+
+        .item:nth-child(4) {
+            background-color: rgb(88, 215, 226);
+            margin-left: 200px;
+            transition: all 1s;
+
+        }
+
+        .item:nth-child(5) {
+            background-color: rgb(207, 154, 69);
+            margin-left: 250px;
+            transition: all 1s;
+
+        }
+
+        div.box:hover div.item:nth-child(1) {
+            transform: translateX(500px);
+        }
+
+        div.box:hover div.item:nth-child(2) {
+            transform: translateX(400px);
+        }
+
+        div.box:hover div.item:nth-child(3) {
+            transform: translateX(500px);
+        }
+
+        div.box:hover div.item:nth-child(4) {
+            transform: translateX(350px);
+        }
+
+        div.box:hover div.item:nth-child(5) {
+            transform: translateX(200px);
+        }
+
+        img {
+            position: absolute;
+            right: -50px;
+            opacity: 0;
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            transition: all 1.5s 0.5s;
+        }
+
+        div.box:hover img {
+
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="main">
+            <div class="left">
+                <h2>寒莫的空间</h2>
+                <!-- <p>
+                    Do you feel cold and lost in desperation<br>
+                    You build up hope but failure's all you've known<br>
+                    Remember all the sadness and frustration<br>
+                    And let it go let it go
+                </p>
+                <p class="name">--变形金刚3</p> -->
+                <div style="clear: both;"></div>
+                <p>第一次见一个人，体温在38.6℃就叫做一见钟情</p>
+                <p class="name">--莎士比亚</p>
+            </div>
+            <div class="right">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <img src="../images/1.jpg" alt="">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
